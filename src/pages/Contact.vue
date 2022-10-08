@@ -29,8 +29,13 @@
 <div class="box">
     <i class="fas fa-phone"></i>
                 <div class="info">
-                    <h3>number :</h3>
-                    <p>+66653242552</p>
+                    <h3>Address:</h3>
+                    <p>{{address}}</p>
+                    <h3>Email:</h3>
+                    <p>{{email}}</p>
+                    <h3>Number :</h3>
+                    <p>{{number}}</p>
+
                 </div>
 </div>
 
@@ -40,15 +45,22 @@
    
    </section>
     </div>
-   </template>
-   
-   <script>
+</template>
+
+<script>
    import Navbar from '../components/Navbar.vue';
    export default {
-       components: { Navbar }
+       components: { Navbar },
+       data() {
+        return {
+            address: 'Pathumthani',
+            email: 'suramesuan.sakn@bumail.net',
+            number: '+66653242552'
+        }
+       }
    }
-   </script>
-   
-   <style>
-   
-   </style>
+</script>
+
+<style>
+
+</style>
