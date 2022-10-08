@@ -11,7 +11,7 @@
     <h3>Hi am {{name}}</h3>
     <span>"{{motto}}"</span>
     <p>{{content}}</p>
-    <a href="Abilities" class="btn"> about me <i class="fas fa-user"></i> </a>
+    <a href="About" class="btn"> about me <i class="fas fa-user"></i> </a>
 </div>
 
 </section>
