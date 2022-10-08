@@ -8,9 +8,9 @@
 </div>
 
 <div class="content">
-    <h3>Suramesuan Saknitinad</h3>
-    <span>"Learning By Doing"</span>
-    <p>Hi am Good I am now studying at Multimedia and Entertainment Engineering Bangkok University and This is my profile.</p>
+    <h3>Hi am {{name}}</h3>
+    <span>"{{motto}}"</span>
+    <p>{{content}}</p>
     <a href="Abilities" class="btn"> about me <i class="fas fa-user"></i> </a>
 </div>
 
@@ -21,7 +21,14 @@
 <script>
 import Navbar from '../components/Navbar.vue';
 export default {
-    components: { Navbar }
+    components: { Navbar },
+    data() {
+        return {
+            name: 'Suramesuan Saknitinad',
+            motto: 'Learning By Doing',
+            content: 'Hi am Good I am now studying at Multimedia and Entertainment Engineering Bangkok University and This is my profile.'
+        }
+    }
 }
 </script>
 
