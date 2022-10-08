@@ -24,11 +24,18 @@
 
                     <div class="box">
                         <h3> <span>Commission : </span> Open </h3>
-                        <h3> <span>skill : </span> Photography , Drawing </h3>
-                        <h3> <span>experience : </span> 0 year</h3>
+                        <h3> <span>skill : </span> Photography , Drawing</h3>
+                        <h3> <span>experience : </span> 0 years</h3>
                         <h3> <span>language : </span> thai </h3>
                     </div>
+                    
+                    <br>
 
+                    <div class="box" v-for="e in experiences" :key="e.years">
+                        <h3> {{e.years}} </h3>
+                        <h3> {{e.schooluni}} </h3>
+                    </div>    
+                        
             </div>
 
         </section>
@@ -74,9 +81,17 @@
 </template>
 
 <script>
-import Navbar from "../components/Navbar.vue";
-export default {
-    components: { Navbar }
+import Navbar from '../components/Navbar.vue';
+   export default {
+       components: { Navbar },
+       data() {
+        return {
+            experiences: [{
+                years:'2021 - 2022',
+                schooluni: 'Bangkok University'
+            }]
+        }
+    }
 }
 </script>
 

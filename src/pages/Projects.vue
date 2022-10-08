@@ -3,7 +3,10 @@
        <navbar />
        <section class="Projects">
    
-        <h1 class="heading"> {{head1}} <span>{{head2}}</span> </h1>
+        <h1 class="heading">My<span> Project</span> </h1>
+        <p> Project Name: {{project_name}} {{project_detail}}</p>
+        <br>
+        <br>
         
 
 <div class="content">
@@ -21,8 +24,8 @@ import Navbar from '../components/Navbar.vue';
        components: { Navbar },
        data() {
         return {
-            head1: 'MY',
-            head2: 'PROJECTS',
+            project_name: 'Noot Noot',
+            project_detail: 'Pain',
         }
        }
    }
